@@ -1,0 +1,98 @@
+.text {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.indent {
+    margin-left: 20px;
+    color:aqua;
+  }
+
+.text {
+    color: black;
+}
+
+.paletteGroupContainer {
+    position: relative;
+    padding-left: 20px;
+    margin-left: 8px;
+    border-left: 1px solid 	#E6E6E6;
+}
+
+.paletteGroupContainer::after {
+    content: '';
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    width: 8px; 
+    height: 2px; 
+    border-bottom: 1px solid #E6E6E6;
+    border-left: 1px solid #E6E6E6;
+    border-radius: 0 0 0 1px;
+    padding-bottom: 10px;
+}
+
+.paletteGroupHeader {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.2s ease;
+    padding: 1px;
+    margin-top: 5px;
+}
+
+.paletteGroupHeader:hover {
+    background-color: #f8f8f8;
+    border-radius: 3px;
+}
+
+.paletteCollectionContainer {
+    position: relative;
+    padding-left: 20px;
+    margin-left: 8px;
+    border-left: 2px solid 	#E6E6E6;
+}
+
+.paletteCollectionContainer::after {
+    content: '';
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    width: 8px; 
+    height: 2px; 
+    border-bottom: 1px solid #B3B3B3;
+    border-left: 1px solid #B3B3B3;
+    border-radius: 0 0 0 1px;
+}
+
+.paletteCollectionHeader {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.2s ease;
+    padding: 1px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.paletteCollectionHeader:hover {
+    background-color: #f8f8f8;
+    border-radius: 3px;
+}
+
+.segmentedControlsContainer {
+    max-width: 50%; 
+    padding: 10px 0; 
+}
+
+.groupHeader {
+    white-space: nowrap;
+    overflow: visible; /* Allow overflow */
+}
+
+.variableName {
+    white-space: nowrap;
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Add ellipsis if text is too long */
+    max-width: 150px; /* Adjust based on your layout */
+}

@@ -1,0 +1,30 @@
+{
+	"name": "figma_variables",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"scripts": {
+		"serve": "frontify-cli serve --entryPath src/index.ts",
+		"deploy": "frontify-cli deploy --entryPath src/index.ts",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@frontify/app-bridge": "^3.0.0",
+		"antd": "^5.17.2",
+		"axios": "^1.6.7",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@frontify/eslint-config-react": "^0.16.1",
+		"@frontify/frontify-cli": "^5.5.7",
+		"@frontify/guideline-blocks-settings": "^0.29.0",
+		"@types/node": "^20.12.10",
+		"@types/react": "^18.2.21",
+		"@types/react-dom": "^18.2.7",
+		"eslint": "^8.48.0",
+		"prettier": "^3.0.3",
+		"typescript": "^5.2.2"
+	}
+}
